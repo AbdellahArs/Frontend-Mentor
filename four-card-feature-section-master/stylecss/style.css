@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very--Dark--Blue: hsl(234, 12%, 34%);
+  --Grayish--Blue: hsl(229, 6%, 66%);
+  --Very--Light--Gray: hsl(0, 0%, 98%);
+}
+
+/* mobile first */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: var(--Very--Light--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 5rem auto; 
+}
+
+span {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 0.9px;
+}
+
+.description p {
+    margin: 1rem 0 3.5rem;
+}
+
+.supervisor,
+.teambuilder,
+.Calculator,
+.karma {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    border-radius: 0.3rem;
+    box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.151);
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.icon {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+
+.supervisor {
+    border-top: 0.25rem solid var(--Cyan);
+}
+
+.teambuilder {
+    border-top: 0.25rem solid var(--Red);
+}
+
+.karma {
+    border-top: 0.25rem solid var(--Orange);
+}
+
+.Calculator {
+    border-top: 0.25rem solid var(--Blue);
+    margin-bottom: 0;
+}
+
+p {
+    opacity: 0.7;
+}
+
+/* desktop */
+
+@media (min-width: 1000px) {
+    .container{
+        width: 80%;
+        margin: 2rem auto
+    }
+    
+    .supervisor,
+    .teambuilder,
+    .Calculator,
+    .karma {
+        width: 25%;
+        height: 12rem;
+        margin-bottom: 0;
+    }
+
+    span {
+        font-size: 29px;
+        opacity: 0.7;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .description p {
+        font-size: 12px;
+        opacity: 0.5;
+        padding: 0 21rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards p {
+        font-size: 11px;
+        margin-top: 0.5rem;
+        opacity: 0.5;
+    }
+
+    .icon {
+        margin-top: 1.5rem;
+    }
+
+    .icon img {
+        width: 3.1rem;
+    }
+
+    .karma {
+        order: 1;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .supervisor,
+    .Calculator {
+        transform: translateY(50%);
+    }
+}

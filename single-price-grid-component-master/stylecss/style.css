@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright--Yellow: hsl(71, 73%, 54%);
+--Light--Gray: hsl(204, 43%, 93%);
+--Grayish--Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+.join {
+    background-color: white;
+    padding: 2rem 1.5rem;
+}
+
+.join h2 {
+    color: var(--Cyan);
+}
+
+.join h4 {
+    color: var(--Bright--Yellow);
+    margin: 1.2rem 1.2rem 1.2rem 0;
+}
+
+.join p {
+    line-height: 1.8;
+    color: var(--Grayish--Blue);
+}
+
+.subscription {
+    background-color: var(--Cyan);
+    padding: 2rem 1.5rem;
+}
+
+.subscription h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.2rem;
+}
+
+h1 {
+    color: white;
+}
+
+.price p {
+    color: var(--Light--Gray);
+    opacity: 0.8;
+    margin: 2rem 0 0 1rem;
+}
+
+.subscription p {
+    color: var(--Light--Gray);
+    margin-bottom: 2.5rem;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;  
+}
+
+button {
+    background-color: var(--Bright--Yellow);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.whyus {
+    background-color: hsla(179, 62%, 43%, 0.822);
+    padding: 2rem 1.5rem;
+}
+
+.whyus h3 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+    color: var(--Light--Gray);
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ul {
+    list-style-type: none;
+    color: var(--Light--Gray);
+    line-height: 1.6;
+} */
+
+/* @media (min-width:1000px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: var(--Light--Gray);
+    }
+
+    .container {
+        width: 45%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        box-shadow: 2px 11px 20px 0px #0000003b;
+    }
+
+    .join {
+        grid-column: 1 / 3;
+
+    }
+
+    .join,
+    .subscription,
+    .whyus {
+        padding: 2.5rem 2.5rem;
+    }
+
+    .join p {
+        font-size: 15px;
+        margin-top: -0.6rem;
+    }
+
+    .subscription h3,
+    .whyus h3 {
+        font-size: 18px;
+    }
+
+    .subscription h3 {
+        margin-bottom: -0.8rem;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .price p {
+        margin-top: 2.5rem;
+    }
+
+    .subscription p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    ul {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+} */

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white /*(paragraphs)*/: hsla(0, 0%, 100%, 0.75);
+    --Verylight-gray /*(background, headings, buttons)*/: hsl(0, 0%, 95%); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Transparent-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+.container {
+    width: 85%;
+    margin: 70px auto;
+    height: 170vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.first-card, .second-card, .third-card {
+    height: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 35px;
+    padding-top: 40px;
+}
+
+.first-card {
+    background-color: var(--Bright-orange);
+}
+
+.second-card {
+    background-color: var(--Dark-cyan);
+}
+
+.third-card {
+    background-color: var(--Very-dark-cyan);
+}
+
+h2 {
+    color: var(--Transparent-white);
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p {
+    color: var(--Transparent-white);
+    padding-top: 20px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+button {
+    margin: 30px 0;
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.first-card button {
+    color: var(--Bright-orange);
+}
+
+.second-card button {
+    color: var(--Dark-cyan);
+}
+
+.third-card button {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width:1000px) {
+    body {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .container {
+        width: 70%;
+        height: 450px;
+        display: flex;
+
+    }
+
+    .first-card, .second-card, .third-card {
+        height: 100%;
+        justify-content: space-around;
+
+    }
+
+    p {
+        padding-right: 20px;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: var(--Transparent-white);
+        border: 2px solid var(--Transparent-white);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    min-height: 100vh;
+    background: url(../images/bg-pattern-bottom.svg) no-repeat 10rem 25.5rem,
+                url(../images/bg-pattern-top.svg) no-repeat -22rem -16.5rem;
+    background-size: 35rem;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    height: 25rem;
+    border-radius: 0.8rem;
+    background: url(../images/bg-pattern-card.svg) no-repeat ;
+    background-size: 100% 145px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* position: relative; */
+}
+
+.name {
+    margin-bottom: 1.5rem;
+}
+
+.state {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-top: 0.01rem solid hsla(227, 10%, 46%, 0.301) ;
+}
+
+img {
+    /* position: absolute;
+    top: 5.5rem;
+    left: 107px; */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.38rem solid white;
+    margin: 17% 0 ;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0.4rem;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(227deg 10% 46% / 77%);
+    letter-spacing: 0.05rem;
+}
+
+.name p {
+    font-size: 16px;
+    margin-top: 0.7rem;
+    font-weight: 400;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+@media  (min-width: 992px) {
+    
+    .container {
+        width: 25.5%;
+    }
+
+    body {
+        background: url(../images/bg-pattern-bottom.svg) no-repeat 46rem 20rem,
+        url(../images/bg-pattern-top.svg) no-repeat -10rem -25.5rem;
+        background-size: 50rem;
+        background-color: var(--Dark-cyan);
+    }
+}
